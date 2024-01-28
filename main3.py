@@ -12,9 +12,7 @@ nlp = spacy.load("en_core_web_sm")
 
 def convert_pdf_to_text(file_path):
     pdf_file_obj = open(file_path, "rb")
-    pdf_reader = PyPDF2.PdfReader(
-        pdf_file_obj
-    )  # Use PdfReader instead of PdfFileReader
+    pdf_reader = PyPDF2.PdfReader(pdf_file_obj)
     num_pages = len(pdf_reader.pages)
     text = ""
     for page_num in range(num_pages):
