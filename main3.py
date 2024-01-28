@@ -4,6 +4,8 @@ from string import punctuation
 from heapq import nlargest
 import PyPDF2
 
+# TODO: add argparse to allow user to specify file path
+
 
 stopwords = list(STOP_WORDS)
 
