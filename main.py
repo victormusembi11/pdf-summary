@@ -5,7 +5,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains.summarize import load_summarize_chain
 from langchain_community.document_loaders import PyPDFLoader
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "your_api_key_here"
 
 llm = OpenAI(temperature=0)
 
